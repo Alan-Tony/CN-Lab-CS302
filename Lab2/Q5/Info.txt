@@ -1,0 +1,22 @@
+Webpage links:
+
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file1.html
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file2.html
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
+http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html
+
+Filters: 
+tcp contains youtube - TCP and contains txt youtube
+ip.addr == X (Fileter based on IP)
+
+Main IP:
+43	9.992831	192.168.1.14	128.119.245.12	TLSv1.2	571	Client Hello
+Book pic server IP:
+111	10.749959	192.168.1.14	178.79.137.164	HTTP	690	GET /8E_cover_small.jpg HTTP/1.1 
+
+
+User Environment Variable:
+Name:
+SSLKEYLOGFILE
+Value:
+C:\Users\alant\SSLKeys\sslkeylog.log
