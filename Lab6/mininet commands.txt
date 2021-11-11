@@ -1,0 +1,29 @@
+
+0. sudo mn (Start network sim will default minimal topology
+A. On mininet
+1. help : command list
+2. nodes: the hsots, switches, controllers
+3. dump: more detaisl on network emulation settings
+4. net: network links between devices
+5. To issue commands to the host
+	a. From mininet host:
+		h1 command (eg h1 ping h2)
+	b. xterm h1 (opens shell for h1)
+		eg: i. h1 ping <ip for h2>
+		    ii. tcpdump -n (-n for no name resolution): Do h1 pig h2 on another prompt, tcmpdump will caputre packets
+6. ping all: pings from every host to every other hosts
+7. iperf : tcp bacndwidth
+8. iperfudp : udp bandwidth
+
+9. On ending, clear up zombie processes and cache : sudo mn -c
+10. introduce latency while launching network :
+	sudo mn --link tc,bw=10,delay=10ms
+	Test by using iperf
+11. sudo wireshark & (To start wireshark, & to run as background process)
+	a. of : filter for OpenFlow packets
+	b. ping all (To get more 'of' packets
+12. Other topologies:
+	a. sudo mn --topo=single,4	(4 hosts)
+	b. sudo mn --topo=linear,4	(switch for every host)
+	c. sudo mn --top0=tree,2,2	(tree with 2 levels, 2 fan-out)
+

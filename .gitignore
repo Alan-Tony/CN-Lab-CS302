@@ -2,9 +2,9 @@ Wireshark\ Traces/
 Submission/
 Ref/
 
-.pcapng
-.xlsx
-.xls
-.zip
+*.pcapng
+*.xlsx
+*.xls
+*.zip
 
 test*.py
